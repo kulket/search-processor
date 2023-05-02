@@ -21,6 +21,7 @@ public class OpenSearchClient {
   }
 
   public Settings getIndexSettings(String indexName, String[] settingNames) {
+    //return Settings.EMPTY;
     GetSettingsRequest getSettingsRequest = new GetSettingsRequest()
         .indices(indexName);
     if (settingNames != null && settingNames.length > 0) {
